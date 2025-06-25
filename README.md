@@ -112,3 +112,71 @@ A simple, safe, and offline-capable chatbot for answering general health-related
 2. **Pull the model** (e.g., mistral or phi)
    ```bash
    ollama run mistral
+
+---
+
+# Task 3: House Price Prediction
+
+## Task Objective
+This project's objective is to develop a regression model that can accurately predict house prices based on various features such as the number of rooms, area, location-related attributes, and more. It also demonstrates a typical supervised learning pipeline using regression techniques.
+
+---
+
+## Dataset Used
+We used a house price dataset in a CSV file from Kaggle, which includes following features:
+
+- Median income
+- House age
+- Average rooms
+- Average bedrooms
+- Population
+- Households
+- Latitude
+- Longitude
+
+The target variable is the **median house value** for California districts (in hundreds of thousands of dollars).
+
+---
+
+## 🤖 Models Applied
+The following models were trained and evaluated in this project:
+
+- **Linear Regression**
+- **Decision Tree Regressor**
+- **Random Forest Regressor**
+
+We also performed preprocessing steps like:
+- Handling missing values
+- Feature scaling (StandardScaler)
+- Train-test splitting
+
+Model evaluation was done using metrics such as:
+- **Mean Squared Error (MSE)**
+- **Root Mean Squared Error (RMSE)**
+- **R² Score**
+
+---
+
+## ✅ Key Results and Findings
+- **Linear Regression** performed reasonably well but showed signs of underfitting.
+- **Decision Tree Regressor** improved performance but tended to overfit slightly on the training set.
+- **Random Forest Regressor** delivered the **best overall performance** with:
+  - Lower RMSE on test data
+  - Higher R² score, indicating better generalization
+
+**Best Test R² Score**: ~0.80  
+**Best Test RMSE**: ~0.48 (in scaled target units)
+
+This confirms the benefit of ensemble methods like Random Forest for regression tasks involving nonlinear relationships and feature interactions.
+
+---
+
+## 📌 Future Improvements
+- Hyperparameter tuning using GridSearchCV or RandomizedSearchCV
+- Feature engineering (e.g., polynomial features)
+- Visual analysis of feature importances
+- Deploying the model as a web app using Streamlit or Flask
+
+---
+
+## 📁 Repository Structure
