@@ -123,7 +123,7 @@ This project's objective is to develop a regression model that can accurately pr
 ---
 
 ## Dataset Used
-We used a house price dataset in a CSV file from Kaggle, which includes following features:
+We used a house price dataset in a CSV file from Kaggle, which includes the following features:
 
 - price
 - area
@@ -139,7 +139,7 @@ We used a house price dataset in a CSV file from Kaggle, which includes followin
 - prefarea
 - furnishingstatus
 
-The target variable is the **median house value** for California districts (in hundreds of thousands of dollars).
+The target variable is the **price**.
 
 ---
 
@@ -159,28 +159,14 @@ Model evaluation was done using metrics such as:
 - **Mean Squared Error (MSE)**
 - **Root Mean Squared Error (RMSE)**
 - **R² Score**
+- **Mean Absolute Percentage Error (MAPE)**
 
 ---
 
 ## Key Results and Findings
-- **Linear Regression** performed reasonably well but showed signs of underfitting.
-- **Decision Tree Regressor** improved performance but tended to overfit slightly on the training set.
-- **Random Forest Regressor** delivered the **best overall performance** with:
-  - Lower RMSE on test data
-  - Higher R² score, indicating better generalization
+- **Linear Regression** had better numerical performance metrics (lower MSE, RMSE, MAPE), but this plot visually confirms its more consistent predictive performance.
+- **LightGBM** appears to underfit high-price houses in this case, likely due to suboptimal hyperparameters or insufficient training data for those price ranges.
 
-**Best Test R² Score**: ~0.80  
-**Best Test RMSE**: ~0.48 (in scaled target units)
-
-This confirms the benefit of ensemble methods like Random Forest for regression tasks involving nonlinear relationships and feature interactions.
-
----
-
-## Future Improvements
-- Hyperparameter tuning using GridSearchCV or RandomizedSearchCV
-- Feature engineering (e.g., polynomial features)
-- Visual analysis of feature importances
-- Deploying the model as a web app using Streamlit or Flask
 
 ---
 
