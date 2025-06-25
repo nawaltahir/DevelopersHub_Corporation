@@ -45,3 +45,69 @@ This project aims to explore the Iris dataset, visualize feature distributions a
 
 ---
 
+# Task 2: General Health Chatbot — Prompt Engineering Based
+
+A simple, safe, and offline-capable chatbot for answering general health-related questions, powered by a local Large Language Model (LLM) using [Ollama](https://ollama.com) and [Gradio](https://gradio.app).
+
+---
+
+## Task Objective
+
+- Build a general-purpose **health query chatbot** using an LLM.
+- Guide the model’s behavior with **prompt engineering** (e.g., act like a friendly medical assistant).
+- Ensure **safety** by preventing harmful or overly specific medical advice.
+- Enable local or open-source usage without API keys.
+
+---
+
+## Dataset Used
+
+- No dataset was used for training.
+- The chatbot relies on **pretrained knowledge** of the model (zero-shot prompting).
+- User queries and system prompts simulate natural conversation.
+
+---
+
+## Models Applied
+
+- `mistral`: 7B parameter model (high accuracy, GPU recommended)
+- `phi`: Smaller and faster for CPU-only machines
+- **Frontend**: Gradio
+- **Backend**: Ollama API (`/api/chat`)
+- The system prompt configures the LLM as a friendly general health assistant.
+
+---
+
+## Key Results & Findings
+
+- The chatbot reliably answers general health queries such as:
+  - “What causes a sore throat?”
+  - “Is paracetamol safe for children?”
+- Prompt engineering improves:
+  - Clarity and friendliness
+  - Safety and tone
+- Mistral is accurate but slow on CPU (~160s/response)
+- Phi is much faster and still effective for general questions
+- Local setup ensures:
+  - Full privacy (no internet calls)
+  - Offline use
+
+---
+
+## Preview
+
+![Chatbot Preview](screenshots/health_chatbot-00.png)
+![Chatbot Preview](screenshots/health_chatbot-01.png)
+![Chatbot Preview](screenshots/health_chatbot-02.png)
+
+
+---
+
+## ▶How to Run the Chatbot Locally
+
+1. **Install Ollama**  
+   https://ollama.com/download
+
+2. **Pull the model** (e.g., mistral or phi)
+   ```bash
+   ollama run mistral
