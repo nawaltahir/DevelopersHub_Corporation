@@ -81,8 +81,9 @@ A simple, safe, and offline-capable chatbot for answering general health-related
 ## Key Results & Findings
 
 - The chatbot reliably answers general health queries such as:
+  - “What is the difference between a heart attack and an angina attack, and which gender mostly suffers from each of these attacks in the whole world?”
   - “What causes a sore throat?”
-  - “Is paracetamol safe for children?”
+  - "How common is it in children versus adults?"
 - Prompt engineering improves:
   - Clarity and friendliness
   - Safety and tone
