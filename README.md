@@ -96,9 +96,9 @@ A simple, safe, and offline-capable chatbot for answering general health-related
 
 ## Preview
 
-![Chatbot Preview](screenshots/health_chatbot-00.png)
-![Chatbot Preview](screenshots/health_chatbot-01.png)
-![Chatbot Preview](screenshots/health_chatbot-02.png)
+![Chatbot Preview 1](screenshots/health_chatbot-00.png)
+![Chatbot Preview 2](screenshots/health_chatbot-01.png)
+![Chatbot Preview 3](screenshots/health_chatbot-02.png)
 
 
 ---
