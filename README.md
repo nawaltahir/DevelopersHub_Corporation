@@ -104,7 +104,7 @@ A simple, safe, and offline-capable chatbot for answering general health-related
 
 ---
 
-## ▶How to Run the Chatbot Locally
+## How to Run the Chatbot Locally
 
 1. **Install Ollama**  
    https://ollama.com/download
