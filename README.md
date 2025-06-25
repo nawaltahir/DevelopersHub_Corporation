@@ -125,14 +125,19 @@ This project's objective is to develop a regression model that can accurately pr
 ## Dataset Used
 We used a house price dataset in a CSV file from Kaggle, which includes following features:
 
-- Median income
-- House age
-- Average rooms
-- Average bedrooms
-- Population
-- Households
-- Latitude
-- Longitude
+- price
+- area
+- bedrooms	
+- bathrooms	
+- stories	
+- mainroad
+- guestroom
+- basement
+- hotwaterheating
+- airconditioning
+- parking
+- prefarea
+- furnishingstatus
 
 The target variable is the **median house value** for California districts (in hundreds of thousands of dollars).
 
