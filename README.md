@@ -143,17 +143,17 @@ The target variable is the **median house value** for California districts (in h
 
 ---
 
-## 🤖 Models Applied
+## Models Applied
 The following models were trained and evaluated in this project:
 
 - **Linear Regression**
-- **Decision Tree Regressor**
-- **Random Forest Regressor**
+- **LightGBM**
 
 We also performed preprocessing steps like:
 - Handling missing values
 - Feature scaling (StandardScaler)
 - Train-test splitting
+- Fine-tuning
 
 Model evaluation was done using metrics such as:
 - **Mean Squared Error (MSE)**
@@ -162,7 +162,7 @@ Model evaluation was done using metrics such as:
 
 ---
 
-## ✅ Key Results and Findings
+## Key Results and Findings
 - **Linear Regression** performed reasonably well but showed signs of underfitting.
 - **Decision Tree Regressor** improved performance but tended to overfit slightly on the training set.
 - **Random Forest Regressor** delivered the **best overall performance** with:
@@ -176,7 +176,7 @@ This confirms the benefit of ensemble methods like Random Forest for regression 
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 - Hyperparameter tuning using GridSearchCV or RandomizedSearchCV
 - Feature engineering (e.g., polynomial features)
 - Visual analysis of feature importances
@@ -184,4 +184,3 @@ This confirms the benefit of ensemble methods like Random Forest for regression 
 
 ---
 
-## 📁 Repository Structure
